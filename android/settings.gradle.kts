@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AgentRelayAndroid"
+rootProject.name = "ThotAndroid"
 include(":app")

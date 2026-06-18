@@ -1,6 +1,6 @@
 # Threat Model
 
-Agent Relay can instruct a desktop machine to act on behalf of a remote Android user. That makes authentication, device revocation, command approval, and audit logs core safety features.
+Thot can instruct a desktop machine to act on behalf of a remote Android user. That makes authentication, device revocation, command approval, and audit logs core safety features.
 
 ## Assets
 

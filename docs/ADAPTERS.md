@@ -1,6 +1,6 @@
 # Adapter Development
 
-Adapters let Agent Relay support Hermes, OpenClaw, Agent Zero, and other desktop agents without changing the Android app.
+Adapters let Thot support Hermes, OpenClaw, Agent Zero, and other desktop agents without changing the Android app.
 
 Each adapter implements:
 

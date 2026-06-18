@@ -1,6 +1,6 @@
 # Cloud Deployment
 
-This guide deploys Agent Relay on a small VPS with Docker Compose and Caddy-managed HTTPS.
+This guide deploys Thot on a small VPS with Docker Compose and Caddy-managed HTTPS.
 
 ## Cheapest Options
 
@@ -34,8 +34,8 @@ sudo ufw enable
 Clone or copy the repository:
 
 ```sh
-git clone https://github.com/YOUR_USER/agent-relay.git
-cd agent-relay
+git clone https://github.com/YOUR_USER/Thot.git
+cd Thot
 ```
 
 Create the environment:

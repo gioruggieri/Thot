@@ -1,6 +1,6 @@
-# Agent Relay
+# Thot
 
-Agent Relay is a self-hosted, open source relay for controlling desktop AI agents from Android.
+Thot is a self-hosted, open source relay for controlling desktop AI agents from Android.
 
 The project is intentionally local-first and self-hostable: Android sends commands to a relay you control, and the desktop host receives them over an outbound WebSocket connection. Agents such as Hermes, OpenClaw, Agent Zero, or custom tools are integrated through desktop adapters.
 
@@ -57,7 +57,7 @@ For a VPS deployment with HTTPS, use [docs/CLOUD_DEPLOY.md](docs/CLOUD_DEPLOY.md
 
 ## Security Defaults
 
-Agent Relay treats desktop control as dangerous by default.
+Thot treats desktop control as dangerous by default.
 
 - Shell and file actions are marked high risk.
 - The demo adapter refuses shell execution unless `ALLOW_SHELL=true` is set on the desktop host.
