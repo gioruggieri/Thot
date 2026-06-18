@@ -126,6 +126,13 @@ class MainActivity : Activity() {
             }
             runOnUiThread {
                 desktopSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, desktops.map { it.name })
+                if (desktops.isEmpty()) {
+                    selectedDesktopId = null
+                    agents.clear()
+                    agentSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listOf("No agents"))
+                    append("No desktop hosts found. Start desktop-host, then refresh.")
+                    return@runOnUiThread
+                }
                 desktopSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                         selectedDesktopId = desktops[position].id
@@ -147,6 +154,12 @@ class MainActivity : Activity() {
             }
             runOnUiThread {
                 agentSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, agents.map { it.name })
+                if (agents.isEmpty()) {
+                    selectedAgentId = null
+                    agentSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, listOf("No agents"))
+                    append("No agents found for this desktop. Check that desktop-host is connected.")
+                    return@runOnUiThread
+                }
                 agentSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                         selectedAgentId = agents[position].id
