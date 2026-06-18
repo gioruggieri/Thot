@@ -1,0 +1,20 @@
+{
+  "name": "agent-relay",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Self-hosted Android-to-desktop relay for local AI agents.",
+  "license": "AGPL-3.0-only",
+  "workspaces": [
+    "backend",
+    "desktop-host"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace backend run dev",
+    "dev:desktop": "npm --workspace desktop-host run dev",
+    "build": "npm --workspaces run build",
+    "test": "npm --workspaces run test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
